@@ -50,3 +50,50 @@ describe('sayHiToHeadphonedRoommate(string)', function() {
     );
   });
 })
+
+function shout(string){
+  return string.toUpperCase()
+}
+
+function whisper(string){
+  return string.toLowerCase()
+}
+
+function logShout(string){
+  console.log(shout(string))
+}
+
+logShout("Apple")
+
+function logWhisper(string){
+  console.log(whisper(string))
+}
+
+logWhisper("ORANGE")
+
+
+function sayHiToHeadphonedRoommate(string){
+  if(string === string.toLowerCase()){
+    console.log("I can\'t hear you!")
+  } if (string === string.toUpperCase()){
+    console.log("YES INDEED!")
+  } if (string === "Let's have dinner together"){
+    console.log("I would love to!")
+  }
+}
+  
+sayHiToHeadphonedRoommate("hi")
+
+/*
+function sayHiToHeadphonedRoommate(string){
+  if(string.toLowerCase() === "I can\'t hear you!"){
+    console.log("I can\'t hear you!")
+  } else if (string === string.toUpperCase()){
+    console.log("YES INDEED!")
+  } else if (string === "Let's have dinner together"){
+    console.log("I would love to!")
+  }
+}
+  
+sayHiToHeadphonedRoommate("hello")
+*/
